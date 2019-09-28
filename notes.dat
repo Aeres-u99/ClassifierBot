@@ -1,0 +1,22 @@
+
+In [6]: @bot.command("assign") 
+   ...: def hello_command(chat, message, args): 
+   ...:     """Testing the assignment""" 
+   ...:     chat.send("I am a train choo choo") 
+   ...:     chat.send(str(chat.id)) 
+   ...:     print(dir(chat)) 
+   ...:                                                                                               
+
+In [7]: bot.run()                                                                                     
+14:13.13 -   INFO    - Your bot is now running!
+14:13.13 -   INFO    - Press Ctrl+C to exit.
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__',
+'__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__',
+'__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__',
+'__str__', '__subclasshook__', '__weakref__', '_api', '_check_equality_', '_get_call_args',
+'_serialize_one', '_to_user', 'admins', 'ban', 'creator', 'delete_message', 'first_name', 'id',
+'last_name', 'leave', 'members_count', 'name', 'optional', 'replace_keys', 'required', 'send',
+'send_audio', 'send_contact', 'send_file', 'send_location', 'send_photo', 'send_sticker',
+'send_venue', 'send_video', 'send_voice', 'serialize', 'set_api', 'status_of', 'title', 'type',
+'unban', 'username']
+
